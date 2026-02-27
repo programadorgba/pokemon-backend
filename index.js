@@ -148,7 +148,7 @@ app.get('/api/status', (req, res) => {
   })
 })
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', ()  => {
   console.log(`[Pokemon] Servidor en puerto ${PORT}`)
   loadAllPokemon()
 })
